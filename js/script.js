@@ -1,3 +1,17 @@
+const lenis = new Lenis({
+  autoRaf: true,
+  duration: 1.2,
+  smooth: true,
+  orientation: "vertical",
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 document.querySelectorAll("a").forEach(function (a) {
   a.addEventListener("click", function (event) {
     event.preventDefault();
