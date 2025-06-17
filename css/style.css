@@ -282,6 +282,11 @@ h1 {
     padding: 30px 10px;
   }
 
+  .links {
+    font-size: 13px;
+    gap: 10px;
+  }
+
   .message01 {
     padding: 30px 10px;
     text-align: center;
